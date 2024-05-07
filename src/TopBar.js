@@ -1,12 +1,14 @@
-// TopBar.js
 import React from 'react';
+import userImage from './1.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons'; // Correct import
 
-function TopBar() {
+function TopBar({ toggleNav }) {
   return (
     <div className="topbar">
-      <div className="toggle">
-        <i className="fas fa-bars"></i>
-      </div>
+      {/* <div className={`toggle ${isNavActive ? 'active' : ''}`} onClick={handleToggleClick}>
+        <FontAwesomeIcon icon={faBars} />
+      </div> */}
       <div className="search">
         <label>
           <input type="text" placeholder="Search here" />
@@ -14,7 +16,7 @@ function TopBar() {
         </label>
       </div>
       <div className="user">
-        <img src="1.png" alt="" />
+        <img src={userImage} alt="" style={{ width: '50px', height: '50px' }} />           
       </div>
     </div>
   );

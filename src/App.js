@@ -6,6 +6,12 @@ import RecentOrders from './RecentOrders';
 import './styles.css';
 
 function App() {
+  // const [isNavActive, setIsNavActive] = useState(false);
+
+  // const toggleNav = () => {
+  //   setIsNavActive(!isNavActive);
+  // };
+  
   return (
     <div className="App">
       <NavBar />

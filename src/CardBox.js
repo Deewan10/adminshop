@@ -6,7 +6,9 @@ function CardBox() {
     <div className="cardBox">
       <Card num="1304" cardname="Daily Views" iconClass="fa fa-eye" />
       <Card num="2,918" cardname="Sales" iconClass="fa fa-shopping-cart" />
-      {/* Add other cards here */}
+      <Card num="184" cardname="Comments" iconClass="fa fa-comments" />
+      <Card num="9,354" cardname="Earnins" iconClass="fa fa-money" />
+
     </div>
   );
 }
