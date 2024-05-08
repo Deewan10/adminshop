@@ -160,7 +160,11 @@ body {
     width: calc(100% - 70px); 
     left: 70px;
 }
-
+.icon {
+    font-size: 1.5rem;
+    z-index: 2;
+  }
+  
 .topbar {
     display: flex;
     justify-content: space-evenly;
