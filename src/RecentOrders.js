@@ -3,7 +3,7 @@ import OrderRow from './OrderRow';
 
 function RecentOrders() {
   return (
-    <div className="details">
+    <div className="details" >
       <div className="recent">
         <div className="cardHead">
           <h2>Recent Orders</h2>

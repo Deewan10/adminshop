@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       <NavBar />
       <TopBar />
-      <div className="main">
+      <div className="main" id='toggle'>
         <CardBox />
         <RecentOrders />
         <BarChart values={values} />
