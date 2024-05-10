@@ -4,7 +4,7 @@ import TopBar from './TopBar';
 import CardBox from './CardBox';
 import RecentOrders from './RecentOrders';
 import './styles.css';
-import BarChart from './Barchart';
+import PieChart from './Piechart';
 
 function App() {
   const values = [1304, 2918, 184, 9354];
@@ -22,7 +22,7 @@ function App() {
       <div  className={`main ${isNavActive ? 'active' : ''}`}>
         <CardBox />
         <RecentOrders />
-        <BarChart values={values} />
+        <PieChart />
       </div>
     </div>
   );
