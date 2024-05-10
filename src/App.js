@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import NavBar from './NavBar';
 import TopBar from './TopBar';
 import CardBox from './CardBox';
@@ -8,18 +8,18 @@ import BarChart from './Barchart';
 
 function App() {
   const values = [1304, 2918, 184, 9354];
+  const [isNavActive, setIsNavActive] = useState(false);
 
-  // const [isNavActive, setIsNavActive] = useState(false);
+  const handleToggleClick = () => {
+    setIsNavActive(!isNavActive);
+  };
 
-  // const toggleNav = () => {
-  //   setIsNavActive(!isNavActive);
-  // };
   
   return (
     <div className="App">
-      <NavBar />
+      <NavBar isNavActive={isNavActive} handleToggleClick={handleToggleClick} />
       <TopBar />
-      <div className="main" id='toggle'>
+      <div  className={`main ${isNavActive ? 'active' : ''}`}>
         <CardBox />
         <RecentOrders />
         <BarChart values={values} />

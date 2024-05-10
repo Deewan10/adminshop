@@ -5,9 +5,7 @@ import logoImage from './37197-removebg-preview.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faHome, faUsers, faComment, faQuestion, faCog, faLock, faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 
-function NavBar() {
-  const [isNavActive, setIsNavActive] = useState(false);
-
+function NavBar({ isNavActive, handleToggleClick }) {
   useEffect(() => {
     const list = document.querySelectorAll(".nav li");
 
@@ -24,10 +22,6 @@ function NavBar() {
       list.forEach((item) => item.removeEventListener("mouseover", activeLink));
     };
   }, []);
-
-  const handleToggleClick = () => {
-    setIsNavActive(!isNavActive);
-  };
 
   return (
     <div className={`container ${isNavActive ? 'nav-active' : ''}`}>
