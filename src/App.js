@@ -3,11 +3,10 @@ import NavBar from './NavBar';
 import TopBar from './TopBar';
 import CardBox from './CardBox';
 import RecentOrders from './RecentOrders';
+import DoughnutChart from './DoughnutChart';
 import './styles.css';
-import BarChart from './Barchart';
 
 function App() {
-  const values = [1304, 2918, 184, 9354];
   const [isNavActive, setIsNavActive] = useState(false);
 
   const handleToggleClick = () => {
@@ -16,7 +15,7 @@ function App() {
 
     
 
-  
+
   return (
     <div className="App">
       <NavBar isNavActive={isNavActive} handleToggleClick={handleToggleClick} />
@@ -24,7 +23,9 @@ function App() {
       <div  className={`main ${isNavActive ? 'active' : ''}`}>
         <CardBox />
         <RecentOrders />
-        <BarChart values={values} />
+        <div className="chart-container">
+          <DoughnutChart />
+        </div>
       </div>
     </div>
   );
