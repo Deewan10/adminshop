@@ -21,7 +21,10 @@ function App() {
       <div  className={`main ${isNavActive ? 'active' : ''}`}>
         <CardBox />
         <RecentOrders />
-        <PieChart />
+        <div className="pie-container">
+          <PieChart />
+        </div>
+        
       </div>
     </div>
   );

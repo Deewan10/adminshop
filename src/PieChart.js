@@ -6,7 +6,7 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 
 const PieChart = () => {
   const data = {
-    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    labels: ['Dress', 'Shirt', 'Short', 'Green', 'Dressssss', 'Orange'],
     datasets: [
       {
         label: '# of Votes',
