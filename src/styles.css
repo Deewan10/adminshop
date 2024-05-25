@@ -190,8 +190,10 @@ body {
     color: #06620A;
 }
 
-.main.active .toggle {
-    margin-left: 25px;
+.toggle.active {
+    position: absolute;
+    top: 12px;
+    left: 40px;
 }
 
 .search {
@@ -319,11 +321,50 @@ body {
     gap: 20px;
     margin-top: 10px;
 }
-
+.details1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main.active .details {
+    gap: 10px;
+    margin-left: 15px;
+}
+.pie-container {
+    width: 35%;
+    display: grid;
+    padding:20px 5px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    margin-right: 25px;
+    height: 500px;
+}
+.pie-container h2 {
+    font-weight: 600;
+    color: var(--blue);
+    padding: 5px 20px 40px 5px;
+}
+.pie {
+    width: 100%;
+}
+.main.active .pie-container {
+    width: 60%;
+    padding: 20px 15px;
+    margin-right: 5px;
+}
+.main.active .pie-container h2{
+    padding: 5px 20px 10px 20px;
+}
+.main.active .details .recent {
+    min-width: 650px;
+}
 .details .recent {
     display: flex;
     display: grid;
     min-height: 500px;
+    min-width: 550px;
     background: var(--white);
     padding: 20px;
     box-shadow: 0 7px 25px rgba(0, 0, 0 , 0.1);
@@ -422,14 +463,13 @@ body {
     font-weight: 500;
 }
 
-.piechart {
+.chart-container {
     background-color: white;
-    padding: 40px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px 0;
     width: 35%;
-    height: 80vh;
   }
   
 

@@ -3,7 +3,7 @@ import NavBar from './NavBar';
 import TopBar from './TopBar';
 import CardBox from './CardBox';
 import RecentOrders from './RecentOrders';
-import PieChart from './PieChart';
+
 import './styles.css';
 
 function App() {
@@ -21,10 +21,6 @@ function App() {
       <div  className={`main ${isNavActive ? 'active' : ''}`}>
         <CardBox />
         <RecentOrders />
-        <div className="pie-container">
-          <PieChart />
-        </div>
-        
       </div>
     </div>
   );
