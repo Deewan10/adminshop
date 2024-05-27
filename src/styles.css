@@ -475,4 +475,106 @@ body {
 
 
 
-  
+@media (max-width: 950px) {
+    .nav {
+        width: 180px;        
+    }
+    .nav h3 {
+        align-items: center;
+        display: flex;
+        font-size: 20px;
+        margin-left: 7px;
+    }
+    .nav ul li a .title {
+        padding: 5px 0px;
+        height: 60px;
+        font-size: 15px;
+    }
+
+    .toggle {
+        left: 180px;
+        margin-left: 5px;
+    }
+    .toggle.active {
+        margin-left: 55px;
+    }
+    .main.active .user {
+        top: 0;
+        right: 10px;
+        padding-left: 20px;
+    }
+    .search {
+        width: 450px;
+        margin-left: 120px;
+    }
+    .cardBox {
+        margin-left: -90px;        
+    }
+
+    .cardBox .card {
+        position: relative;
+        background-color: white;
+        padding: 25px;
+        width: 30%;
+    }
+
+    .main.active .cardBox .card .iconbx {
+        padding-left: 0px;
+    }
+    .main.active .cardBox .card {
+        position: relative;
+        background-color: white;
+        padding: 25px 15px;
+        width: 22%;
+    }
+
+    .cardBox .card .num {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .cardBox .card .cardname {
+        font-size: 0.6rem;
+        margin-top: 15px;
+    }
+    .cardBox .card .iconbx {
+        font-size: 1.5rem;
+        padding-left: 20px;
+    }
+    .details1 {
+        flex-wrap: wrap;
+    }
+    .details {
+        width: 100%;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+        margin-left: -90px;
+    }
+    .details .recent {
+        min-height: 530px;
+        min-width: 680px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    .main.active .details .recent {
+        min-width: 800px;
+    }
+    .main.active {
+        justify-content: center;
+        align-items: center;
+        left: 70px;
+    }
+
+    .pie-container {
+        width: 105%;
+        padding: 20px 5px;
+        margin-top: 20px;
+        margin-left: -68px;
+        height: auto;
+    }
+    .main.active .pie-container {
+        width: 91%;
+        margin-left: 35px;
+    }
+}
