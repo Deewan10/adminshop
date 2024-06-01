@@ -581,6 +581,133 @@ body {
 
 
 
-@media (max-width: 950px) {
+@media (max-width: 450px) {
+    .search {
+        width: 340px;
+        margin-left: 60px;
+    }
+    .user{
+        top: 0;
+        right: 0;
+        position: absolute;
+        margin-right: -90px;
+    }
+    .nav {
+        display: none;
+    }
+    .main.active .nav {
+        display: flex;
+        width: 70px;
+        position: fixed;
+        width: 300px;
+        height: 100%;
+        background: #06620A;
+        border-left: 10px solid #164018;
+        transition: 0.5s ease;
     
+    }
+
+    .toggle.active {
+        margin-left: 55px;
+    }
+    .toggle {
+        left: 0;
+        margin-left: 5px;
+        font-size: 40px;
+    }
+    .nav h3 {
+        align-items: center;
+        display: none;
+        
+    }
+    .main {
+        position: absolute;
+        width: 100%;
+        left: 110px;
+        min-height: 100vh;
+        background: var(--white);
+        transition: 0.5s ease;
+    }
+    .nav ul li a .title {
+        display: none;
+    }
+    .nav ul li a:hover .title {
+        display: flex;
+    }
+
+    .details1 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: -100px;
+    }
+    .main.active .details .recent {
+        min-width: 400px;
+    }
+    .details {
+        width: 300px;
+        padding: 10px;
+        
+        
+        
+    }
+    .details .recent {
+        width: 395px;
+        min-width: 100%;
+        overflow: scroll;
+        padding: 10px;
+    }
+    .details .recent table tr td span {
+        font-size: 8px;
+    }
+    .cardHead .btn {
+        margin-top: 5px;
+        padding: 5px 10px;
+        font-size: 8px;
+    }
+    .cardHead h2 {
+        font-size: 20px;
+        padding-left: 10px;
+    }
+
+    .main.active .cardBox {
+        display: flex;
+        
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cardBox {
+        display: flex;
+        flex-direction: column;
+        margin-left: -60px;
+        width: 100%;
+    }
+
+    .main.active .cardBox .card {
+        position: relative;
+        background-color: white;
+        padding: 25px 15px;
+        width: 46%;
+    }
+    .cardBox .card {
+        position: relative;
+        background-color: white;
+        padding: 25px 20px;
+        width: 100%;
+    }
+
+    .main.active .pie-container {
+        width: 51%;
+        margin-left: 35px;
+    }
+    .pie-container {
+        width: 400px;
+        padding: 5px 10px;
+        margin-top: 15px;
+        margin-left: 55px;
+        height: auto;
+    }
+    .pie {
+        width: 100%;
+    }
 }
