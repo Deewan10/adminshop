@@ -584,27 +584,29 @@ body {
 @media (max-width: 450px) {
     .search {
         width: 340px;
-        margin-left: 60px;
+        margin-left: 70px;
     }
     .user{
         top: 0;
         right: 0;
         position: absolute;
-        margin-right: -90px;
+        margin-right: -70px;
     }
     .nav {
         display: none;
     }
-    .main.active .nav {
+    .nav h3 {
+        display: none;
+    }
+    .nav.active {
+        
         display: flex;
         width: 70px;
         position: fixed;
-        width: 300px;
         height: 100%;
         background: #06620A;
         border-left: 10px solid #164018;
         transition: 0.5s ease;
-    
     }
 
     .toggle.active {
@@ -635,31 +637,7 @@ body {
         display: flex;
     }
 
-    .details1 {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin-left: -100px;
-    }
-    .main.active .details .recent {
-        min-width: 400px;
-    }
-    .details {
-        width: 300px;
-        padding: 10px;
-        
-        
-        
-    }
-    .details .recent {
-        width: 395px;
-        min-width: 100%;
-        overflow: scroll;
-        padding: 10px;
-    }
-    .details .recent table tr td span {
-        font-size: 8px;
-    }
+    
     .cardHead .btn {
         margin-top: 5px;
         padding: 5px 10px;
@@ -672,9 +650,10 @@ body {
 
     .main.active .cardBox {
         display: flex;
-        
         flex-wrap: wrap;
         justify-content: center;
+        flex-direction: row;
+        margin-left: 8px;
     }
     .cardBox {
         display: flex;
@@ -687,6 +666,7 @@ body {
         position: relative;
         background-color: white;
         padding: 25px 15px;
+        
         width: 46%;
     }
     .cardBox .card {
@@ -696,10 +676,46 @@ body {
         width: 100%;
     }
 
-    .main.active .pie-container {
-        width: 51%;
-        margin-left: 35px;
+
+    .details1 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: -100px;
     }
+    
+    .details {
+        width: 300px;
+        padding: 10px;  
+    }
+    .main.active .details .recent {
+        width: 300px;
+        min-width: 100%;
+        overflow: scroll;
+        padding: 10px;
+        margin-left: 30px;
+    }
+    .details .recent {
+        width: 395px;
+        min-width: 100%;
+        overflow: scroll;
+        padding: 10px;
+    }
+    .details .recent table tr td span {
+        font-size: 8px;
+    }
+
+    .main.active .pie-container {
+        width: 300px;
+        min-width: 100%;
+        margin-left: 105px;
+        padding: 5px 0px;
+        margin-right: -20px;
+    }
+    .main.active .pie {
+        width: 95%;
+    }
+
     .pie-container {
         width: 400px;
         padding: 5px 10px;
