@@ -583,14 +583,14 @@ body {
 
 @media (max-width: 450px) {
     .search {
-        width: 340px;
+        width: 250px;
         margin-left: 70px;
     }
     .user{
         top: 0;
         right: 0;
         position: absolute;
-        margin-right: -70px;
+        
     }
     .nav {
         display: none;
