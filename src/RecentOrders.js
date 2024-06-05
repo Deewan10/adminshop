@@ -9,7 +9,7 @@ function RecentOrders() {
         <div className="recent">
           <div className="cardHead">
             <h2>Recent Orders</h2>
-            <a href="#" className="btn">View All</a>  
+            <a href="index.html" className="btn">View All</a>  
           </div>
           <table>
             <thead>

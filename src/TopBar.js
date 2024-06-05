@@ -1,6 +1,5 @@
 import React from 'react';
 import userImage from './1.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function TopBar({ toggleNav }) {
   return (

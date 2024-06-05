@@ -28,49 +28,49 @@ function NavBar({ isNavActive, handleToggleClick }) {
       <div className={`nav ${isNavActive ? 'active' : ''}`}>
         <ul>
           <li>
-            <a href="#">
+            <a href="index.html">
               <img src={logoImage} alt="" style={{ width: '50px', height: '50px' }} />           
               <h3>Shop<span>Fast</span></h3>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="index.html">
               <span className="icon"><FontAwesomeIcon icon={faHome} /></span>
               <span className="title">Dashboard</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="index.html">
               <span className="icon"><FontAwesomeIcon icon={faUsers} /></span>
               <span className="title">Customers</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="index.html">
               <span className="icon"><FontAwesomeIcon icon={faComment} /></span>
               <span className="title">Messages</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="index.html">
               <span className="icon"><FontAwesomeIcon icon={faQuestion} /></span>
               <span className="title">Help</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="index.html">
               <span className="icon"><FontAwesomeIcon icon={faCog} /></span>
               <span className="title">Settings</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="index.html">
               <span className="icon"><FontAwesomeIcon icon={faLock} /></span>
               <span className="title">Password</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="index.html">
               <span className="icon"><FontAwesomeIcon icon={faAngleDoubleRight} /></span>
               <span className="title">Sign out</span>
             </a>
