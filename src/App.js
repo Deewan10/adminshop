@@ -17,7 +17,9 @@ function App() {
   return (
     <div className="App">
       <NavBar isNavActive={isNavActive} handleToggleClick={handleToggleClick} />
-      <TopBar />
+      <div  className={`top ${isNavActive ? 'active' : ''}`}>
+        <TopBar />
+      </div>
       <div  className={`main ${isNavActive ? 'active' : ''}`}>
         <CardBox />
         <RecentOrders />

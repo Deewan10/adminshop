@@ -583,14 +583,27 @@ body {
 
 @media (max-width: 450px) {
     .search {
-        width: 250px;
+        width: 300px;
+        margin-left: 70px;
+    }
+    .top.active .search {
+        width: 200px;
         margin-left: 70px;
     }
     .user{
-        top: 0;
+        top: 5px;
         right: 0;
         position: absolute;
-        
+        width: 50px;
+        height: 50px;
+        margin-right: -88px;
+    }
+    .top.active .user{
+        top: 5px;
+        right: 0;
+        width: 45px;
+        height: 45px;
+        margin-right: 8px;
     }
     .nav {
         display: none;
@@ -611,6 +624,7 @@ body {
 
     .toggle.active {
         margin-left: 55px;
+        font-size: 35px;
     }
     .toggle {
         left: 0;
@@ -706,14 +720,14 @@ body {
     }
 
     .main.active .pie-container {
-        width: 300px;
+        width: 280px;
         min-width: 100%;
         margin-left: 105px;
         padding: 5px 0px;
         margin-right: -20px;
     }
     .main.active .pie {
-        width: 95%;
+        width: 90%;
     }
 
     .pie-container {
