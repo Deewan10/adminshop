@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import './styles.css'; 
 import logoImage from './37197-removebg-preview.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
